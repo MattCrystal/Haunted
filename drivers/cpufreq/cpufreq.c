@@ -32,6 +32,7 @@
 
 #include <trace/events/power.h>
 
+extern void apenable_auto_hotplug(bool state);
 /**
  * The "cpufreq driver" - the arch- or hardware-dependent low
  * level driver of CPUFreq support, and its spinlock. This lock
