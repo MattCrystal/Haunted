@@ -1741,6 +1741,7 @@ static struct bma250_platform_data gsensor_bma250_platform_data = {
 
 static struct akm8975_platform_data compass_platform_data = {
 	.layouts = FIGHTER_LAYOUTS,
+	.use_pana_gyro = 0,
 };
 
 static struct pn544_i2c_platform_data nfc_platform_data = {
@@ -1801,7 +1802,6 @@ static int capella_pl_sensor_lpm_power(uint8_t enable)
 			pr_err("[PS][cm3629] %s: leave lmp,set_optimum_mode l16 failed, rc=%d\n", __func__, rc);
 		else
 			pr_info("[PS][cm3629] %s: leave lmp,OK\n", __func__);
-		msleep(10);
 	}
 	mutex_unlock(&capella_cm36282_lock);
 	return ret;
