@@ -126,7 +126,7 @@ static unsigned int boost_freq = 810000;
 static bool boost = true;
 
 /* in nsecs */
-static unsigned int boost_duration = 0;
+static unsigned int boost_duration = 5000000;
 
 /* Consider IO as busy */
 #define DEFAULT_IO_IS_BUSY 1
