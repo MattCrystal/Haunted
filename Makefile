@@ -1,7 +1,7 @@
 VERSION = 3
 PATCHLEVEL = 4
 SUBLEVEL = 60
-EXTRAVERSION =
+EXTRAVERSION = -Haunted_Kernel-Xseries
 NAME = Saber-toothed Squirrel
 
 # *DOCUMENTATION*
